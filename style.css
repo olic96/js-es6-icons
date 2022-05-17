@@ -4,13 +4,28 @@
     padding: 0;
 }
 
+i {
+    font-size: 35px;
+}
+
 form {
     text-align: center;
 }
 
+.container {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
 .icon-box {
+    text-align: center;
+    line-height: 25px;
+    margin: 5px;
+    padding-top: 25px;
     height: 100px;
     width: 200px;
     border: 1px solid red;
     background-color: antiquewhite;
 }
+

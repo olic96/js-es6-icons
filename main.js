@@ -6,8 +6,7 @@ Milestone 3
 Aggiungere alla pagina una select in cui le options corrispondono ai vari tipi di icone (animal, vegetable, user). Quando l'utente seleziona un tipo dalla select, visualizzare solamente le icone corrispondenti. */ 
 
 /* MILESTONE 1 */ 
-
-[
+const icons = [
     {
         name: 'cat',
         prefix: 'fa-',
@@ -120,6 +119,18 @@ Aggiungere alla pagina una select in cui le options corrispondono ai vari tipi d
         family: 'fas',
         color: 'blue'
     }
-];
+]
 
-const container = document.querySelector(".container");
+const iconContainer = document.querySelector(".container");
+
+for(let i = 0; i < icons.length; i++) {
+    const icon = icons[i];
+    const iconHtml = `
+    <div class="icon-box">
+                <i class="fa-solid fa-${icon.name}"></i>
+                <h4>${icon.name}</h4>
+            </div>
+    `
+    iconContainer.innerHTML += iconHtml
+}
+
