@@ -127,7 +127,7 @@ for(let i = 0; i < icons.length; i++) {
     const icon = icons[i];
     const iconHtml = `
     <div class="icon-box">
-                <i class="fa-solid fa-${icon.name}"></i>
+                <i class="fa-solid fa-${icon.name}" style="color:${icon.color};"></i>
                 <h4>${icon.name}</h4>
             </div>
     `
